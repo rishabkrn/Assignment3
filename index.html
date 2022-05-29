@@ -9,10 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Orpheus</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
-<body class="home-container">
+<body>
     <!-- Represents content of the document -->
     <header class="navbar">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          <!-- Use any element to open the sidenav -->
         <div class="logo">
             <img src="images/logo.png">
         </div>
@@ -21,18 +30,57 @@
                 <li><a href=""><img src="images/ico_menu-search.svg" alt=""></a></li>
                 <li><a href=""><img src="images/ico_menu-account.svg" alt=""></a></li>
                 <li><a href=""><img src="images/ico_menu-cart.svg"alt=""></a></li>
-                <span>
-                    <ai><a href="">MENU<alt=""></a></li> 
-                    <ai><a href=""><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
+                <span onclick="openNav()">
+                    <ai><a >MENU<alt=""></a></li> 
+                    <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
                 </span>               
                 
             </ul>
         
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <div class="slideshow">
+        <img src="/images/slide-1-home.jpg" alt="">
+    </div>
 
-    <script src="js/script.js"></script>
+    <h2>Featured Collections</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="images/dining.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/couch.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/coffee.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+    <main>
+        <div>
+            
+        </div>
+    </main>
+    <footer>
+        <section>
+            <div class="newsletter">
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="menu.js"></script>
 </body>
 </html>
