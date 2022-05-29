@@ -10,11 +10,12 @@
     <title>Black Orpheus</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <!-- Represents content of the document -->
-    <header class="navbar">
-        <div id="mySidenav" class="sidenav">
+    <header id=navbar class="navbar">
+        <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -39,32 +40,29 @@
         
         </nav>
     </header>
-    <div class="slideshow">
-        <img src="/images/slide-1-home.jpg" alt="">
+    <div class="parallax">
+        <div class="slideshow">
+            <img src="/images/slide-1-home.jpg" alt="">
+            <img src="/images/s" alt="">
+        </div>
     </div>
 
     <h2>Featured Collections</h2>
     <div class="cards">
         <div class="card">
             <img src="images/dining.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <p class="description">Popular vintage and exclusive timber dining range that will fit into any home.</p>
+            <p><button>Shop Dining</button></p>
         </div>
         <div class="card">
             <img src="images/couch.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <p class="description">Comforting Italian leather lounge sets, perfect for your creative space</p>
+            <p><button>Shop Lounges</button></p>
         </div>
         <div class="card">
             <img src="images/coffee.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <p class="description">Space and storage efficient coffee tables built to last.</p>
+            <p><button>Shop Tables</button></p>
         </div>
     </div>
 
@@ -74,9 +72,17 @@
         </div>
     </main>
     <footer>
-        <section>
+        <section class="footer">
             <div class="newsletter">
-
+                <h3>Stay In The Loop</h3>
+                <form>
+                    <input type="text">
+                </form>
+                <h4>Get exclusive details on new products and receive special offers </h4>
+            </div>
+            <div class="social">
+                <h3>Stay In The Loop</h3>
+                <h3>Stay In The Loop</h3>
             </div>
         </section>
     </footer>
