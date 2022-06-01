@@ -14,48 +14,58 @@
 </head>
 <body>
     <!-- Represents content of the document -->
+    <div class="notice">
+        <a href="">Delivering Contactless & Australia Wide</a>
+    </div>
     <header id=navbar class="navbar">
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <div class="sidemenu">
+                <a href="#">Furniture</a>
+                <a href="#">Homeware</a>
+                <a href="#">Lighting</a>
+                <a href="#">Mirrors</a>
+                <a href="#">Wall Decor</a>
+                <a href="#">Bags</a>
+                <a href="#">Sale</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Account</a>
+            </div>
           </div>
-          <!-- Use any element to open the sidenav -->
         <div class="logo">
-            <img src="images/logo.png">
+            <a href="index.html"> <img src="images/logo.png"></a>
         </div>
         <nav>
             <ul>
                 <li><a href=""><img src="images/ico_menu-search.svg" alt=""></a></li>
                 <li><a href=""><img src="images/ico_menu-account.svg" alt=""></a></li>
                 <li><a href=""><img src="images/ico_menu-cart.svg"alt=""></a></li>
-                <span onclick="openNav()">
-                    <ai><a >MENU<alt=""></a></li> 
-                    <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
-                </span>               
+                <div class="menuhover">
+                    <span onclick="openNav()">
+                        <ai><a >MENU<alt=""></a></li> 
+                        <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
+                    </span>      
+                </div>         
                 
             </ul>
         
         </nav>
     </header>
-    <div class="parallax">
-        <div class="slideshow">
-            <img src="/images/slide-1-home.jpg" alt="">
-            <img src="/images/s" alt="">
-        </div>
-    </div>
+    
+
+    <div class="parallax"></div>
+
 
     <h2>Featured Collections</h2>
     <div class="cards">
         <div class="card">
-            <img class=cardimage src="images/dining.jpg" alt="Denim Jeans" style="width:100%">
+            <img src="images/dining.jpg" alt="Denim Jeans" style="width:100%">
             <p class="description">Popular vintage and exclusive timber dining range that will fit into any home.</p>
             <p class="featuredbutton"><button>Shop Dining</button></p>
         </div>
         <div class="card">
-            <img class=cardimage src="images/couch.jpg" alt="Denim Jeans" style="width:100%">
+            <img src="images/couch.jpg" alt="Denim Jeans" style="width:100%">
             <p class="description">Comforting Italian leather lounge sets, perfect for your creative space</p>
             <p class="featuredbutton"><button>Shop Lounges</button></p>
         </div>
@@ -74,20 +84,45 @@
     </main>
     <footer>
         <section class="footer">
-            <div class="newsletter">
-                <h3>Stay In The Loop</h3>
-                <form>
-                    <input type="text">
-                </form>
-                <h4>Get exclusive details on new products and receive special offers </h4>
+            <hr class="divider-1">
+            <section class="footer1">
+                <div class="newsletter">
+                    <h3>Stay In The Loop</h3>
+                    <div class="signuplayout">
+                        <form>
+                            <img src="/images/ico-newsletter.png" alt="">
+                            <input type="newsbox" placeholder="Email address" >
+                        </form>
+                        <span class="signupbtn" style="vertical-align: middle">SIGN UP</span>
+                    </div>
+                    <h4>Get exclusive details on new products and receive special offers </h4>
+                </div>
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><img src="/images/ico_amex.svg" alt=""></li>
+                        <li><img src="images/ico_mastercard.svg" alt=""></li>
+                        <li><img src="images/ico_visa.svg" alt=""></li>
+                        <li><img src="images/ico_paypal.svg" alt=""></li>
+                        <li><img src="images/ico_zippay_3.svg" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider-2">
+            <div class="payfooter">
+                <ul>
+                    <li><img src="/images/ico_amex.svg" alt=""></li>
+                    <li><img src="images/ico_mastercard.svg" alt=""></li>
+                    <li><img src="images/ico_visa.svg" alt=""></li>
+                    <li><img src="images/ico_paypal.svg" alt=""></li>
+                    <li><img src="images/ico_zippay_3.svg" alt=""></li>
+                </ul>
             </div>
-            <div class="social">
-                <h3>Stay In The Loop</h3>
-                <h3>Stay In The Loop</h3>
-            </div>
+            <h4>© 2022 Black Orpheus Emporium</h4>
         </section>
+
     </footer>
 
-    <script src="menu.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
