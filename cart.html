@@ -60,13 +60,66 @@
     </div>
     <main>
         <div><img class="cart-bg" src="/images/cart-bg.jpg" alt=""></div>
+        
+        <div class="back-span" style="padding: 0 0 0 100px;margin-top:50px;">
+
+            <i class="back left"></i>
+            <a  href="product.html" class="back-text" >BACK</a>
+        </div>
         <span class="cart-card">
             <div class="cart-title">
                 <h1 style="">Cart</h1>
                 
             </div>
         
-       </span>
+        </span>
+        
+        <section id="cart" class="cart-wrap">
+            <table width="100%">
+                <thead>
+                    <tr>
+                         <td>Product</td>
+                         <td></td>
+                         <td>Price</td>
+                         <td>Quantity</td>
+                         <td style="text-align: right;">Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="/images/product-photograph-4.png" alt=""></td>
+                        <td>
+                            <h3 style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3>
+                            <br>6 Drawer Timber Coffee Table.
+                            <br>Dimensions: 90cm x 70cm x 40cm
+                            <br>Colour: Timber Brown <br><br>
+                            <a class=remove href="">Remove</a>
+                        </td>
+                        <td style="font-size: 1.5em;font-weight: 400;">$459.00</td>
+                        <td>
+                            <button onclick="dec('amount')">-</button>
+                            <input name="amount" type="number" value="1">
+                            <button onclick="inc('amount')">+</button> 
+                        </td>
+                        <td style="font-size: 1.5em;font-weight: 500;">$459.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="total">
+            <div class="total-left">
+                <p class="total-title">Total</p>
+                <p class="total-caption">Shipping & taxes calculated at checkout</p>
+            </div>
+            <div class="total-right">
+                <p class="total-price">$2754.00</p>
+                <div class="cart-button">
+                    <a href="#" class="cart-checkout">PROCEED TO CHECKOUT</a>
+                </div>
+            </div>
+
+        </div>
+        
     </main>
     <footer>
         <section class="footer">
@@ -107,5 +160,6 @@
         </section>
 
     </footer>
+<script src="/scripts/cart.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+:root{
+    background-color: #111111;
+}
+
 .cart-bg{
     position: sticky;
     top: 20px; 
@@ -10,6 +14,210 @@
 
 .cart-title{
     text-align: center;
+    margin-top: -70px;
+    margin-bottom: -50px;
+}
+
+.cart-wrap{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap:
+
+}
+#cart table img{
+    width: 180px;
+
+}
+
+#cart table td:nth-child(1) {
+    width: 170px;
+    text-align: left;
+    padding-top: 50px;
 
 
+}
+
+#cart table td:nth-child(2){
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    padding: 50px;
+
+}
+#cart table td:nth-child(3){
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 50px;
+
+}
+
+#cart table thead td:nth-child(4){
+    width: 100%;
+    padding-right: 90px;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+#cart table td:nth-child(4){
+    width: 100%;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+
+
+#cart table td:nth-child(4) input{
+    width: 40px;
+    padding: 20px 5px 20px 5px;
+    border-radius: 0 ;
+    border: 1px solid #c7ac68;;
+    background-color: rgb(19, 19, 19);
+    color: #c7ac68;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#cart table td:nth-child(4) button{
+    width: 30px;
+    justify-content: center;
+    padding: 20px 5px 20px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 0 ;
+    background-color: #2C2C2C;
+    color: #c7ac68;
+    font-size: 1.2em;
+}
+#cart table td:nth-child(4) button:hover{
+    
+    background-color: rgb(19, 19, 19);
+    color: #c7ac68;
+    font-size: 1.2em;
+}
+
+
+#cart table td:nth-child(4) input:focus{
+    outline: none;
+}
+#cart table td:nth-child(4) input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+
+#cart table td:nth-child(5){
+    width: 100%;
+    text-align: right;
+    padding-top: 50px;
+    vertical-align: top;
+
+}
+
+#cart table thead{
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#cart table thead td{
+    color: white;
+    font-weight:300;
+    font-size:1em;
+    padding:18px 0;
+}
+
+#cart table tbody tr td{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dfdfdf;
+    color: white;
+    font-weight:300;
+    font-size: 1em;
+}
+
+#cart table tbody tr td:nth-child(4){
+    padding-right: 53px;
+    
+}
+
+.remove{
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #adadad;
+    margin-top: 90px;
+    
+}
+
+.total{
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+}
+
+.cart-button{
+    display: flex;
+    justify-content: right;
+
+}
+.cart-checkout{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    background-color: #C7AC68;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+    margin-bottom: 12px;
+    transition: background-color .3s;
+
+}
+
+.cart-checkout:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+
+}
+
+.total-title{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.total-caption{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: rgb(138, 138, 138);
+}
+.total-price{
+    display: flex;
+    justify-content: right;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #C7AC68;;
+    margin-bottom: 80px;
 }

@@ -5,7 +5,7 @@
 .notice{
   display: inline-block;
   vertical-align: middle;
-  background-color: rgb(199,172,104);
+  background-color: #c7ac68;
   width: 100%;  
   position: sticky;
   top: 0%;
@@ -263,7 +263,20 @@ nav ul li button{
 
 
 
-@media only screen and (min-width: 1270px) {
+@media screen and (max-width: 2000px){
+  .notice a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 35px;
+    vertical-align: middle;
+
+  }
+
+}
+
+@media screen and (max-width: 1300px){
   .notice a{
     color: #ffffff;
     text-decoration: none;
@@ -277,17 +290,6 @@ nav ul li button{
 
 }
 
-@media only screen and (min-width: 1800px) {
-  .notice a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    line-height: 35px;
-    vertical-align: middle;
 
-  }
-
-}
 
 
