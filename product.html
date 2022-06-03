@@ -43,7 +43,7 @@
             <ul>
                 <li><button onclick="toggleSearchProduct()"><img src="/images/ico_menu-search.svg" alt=""></button></li>
                 <li><a href=""><img src="/images/ico_menu-account.svg" alt=""></a></li>
-                <li><a href=""><img src="/images/ico_menu-cart.svg"alt=""></a></li>
+                <li><a href="cart.html"><img src="/images/ico_menu-cart.svg"alt=""></a></li>
                 <div class="menuhover">
                     <span onclick="openNav()">
                         <ai><a >MENU<alt=""></a></li> 
@@ -62,11 +62,16 @@
 
     </div>
     <main>
-        <div id=product-img class="product-img img-magnifier-container">
-            <img id=myimage src="/images/long-product-photograph.png" alt="">
+        <div id=product-img class="product-img">
+            <img id=myimage src="/images/product-photograph-1.jpg" alt="">
         </div>
         <div class="product-layout">
             <div class="product-left">
+                <div class="back-span">
+                    <i class="back left"></i>
+                    <a  href="catalogue.html" class="back-text">BACK</a>
+                </div>
+
                 <p class="product-title">Tasmania Mahogany Drawer</p>
                 <h6>Claim a classic look in your decor with the timber tones and ample storage of the Tasmania Mahogany 6 Drawer Timber Coffee Table.
 
@@ -76,6 +81,7 @@
 
             </div>
             <div class="product-right">
+                <div class = "vertical"></div>
                 <div class="price">
                     <p class="price-strike">$659.00</p>
                     <p>$459.00</p>
@@ -99,12 +105,95 @@
                                 <button type="button" class="square" style="background-color: #E0E0E0;"></button>
                     </div>
                 </div>
+                <div class="quantity-wrapper">
+                    <div class="select">
+                        <div class="select-trigger">
+                              <div class = select-box>
+                                <p class=filters>Quantity</p>  
+                                <span>1</span>
+                              </div>
+                              <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" >1</span>
+                            <span class="custom-option" >2</span>
+                            <span class="custom-option" >3</span>
+                            <span class="custom-option" >4</span>
+                            <span class="custom-option" >5</span>
+                            <span class="custom-option" >6</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-button">
                     <a href="#" class="product-add">ADD TO CART</a>
                 </div>
             </div>
+        
+            
+        </div>
+        
+            
+        </div>
+        <div class="c-wrapper">
+            <div class="collapsible-container">
+                <button class="collapsible">Specifications</button>
+                    <div class="content">
+                        
+                        <h6><b>Maker:</b> Black Orpheus - Handmade Collections Build
+                            <br><br><b>Location:</b>  
+                            Lakeside Melbourne, Handmade
+                            <br><br>
+                            <b>District Frame:</b> Kiln-dried hardwood + corner-blocked joinery (FSC Timbers/Flex Frame Larix Sibirica Timber)
+                            <br><br><b>Suspension:</b> No-Sag Zig Zag Spring, Layered Multi-Density Foams for increase comfort profileCushions: All seats feature 100% Down fill seat and back cushions, 100% Goose Feathers wrapped in Quilted Down Core, Feather-wrapped core fill seat cushions Down Feathers wrapped in a Hybrid Foam Core to create a 'Cloud' like experience, that ensures the cushions remain strong and fulfilled for yearsAccent Pillows: Each Unit (end) comes with
+                            <br><br><b>Accent CushionsUpholstery:</b> Cushions and pillows are slipcovered for ease of use. Simply remove covers for each washing and cleaning (100% polyester basic fabrics)
+                            <br><br><b>Upholstery Consideration:</b> Fabric and Leather can vary from different production lots, please consider carefully when ordering extra pieces
+                            <br><br><b>Care:</b> Down Seating, unlike foam seating variants, requires occasional care and maintenance to maintain the down's natural buoyancy. We recommend basic fluffing twice a month. Vacuum with an upholstery attachment to keep the Cloud Sofa in the best conditions. </h6>
+                    </div>
+                    <button class="collapsible">Delivery</button>
+                    <div class="content">
+                        <h6>If you have purchased smaller items that are shipped directly from our warehouse or items that are from our Online Exclusive range, delivery to your front door will be provided by our trusted courier delivery partners. Delivery charges apply.
+                            <br><br>
+                            Once your items have been collected from our warehouse you will get a notification via sms or email with a tracking link. This tracking link will allow you to track the status of your order. In some cases, tracking updates could take 24 hours to update accurately.
+                            Estimated delivery timeframes for courier deliveries; once you’ve received an email or sms notification that your item/s are in transit please allow:
+                            <br><br>
+                            Metro delivery: Within 3 business days
+                            <br><br>
+                            Regional delivery: 7 business days
+                            </h6>
+                    </div>
+                    <button class="collapsible">Warranty & Returns</button>
+                    <div class="content">
+                        <h6>Buy with confidence as this product comes with a 14 Day Change of Mind Guarantee (unless otherwise stated in the overview). For more information, please see our Change of Mind Policy.
+                            <br><br>
+                            This product is covered by the Customer Charter and comes with guarantees that cannot be excluded under the Australian Consumer Law.
+                            <br><br>
+                            1 Year Ovela Warranty (Included)</h6>
+                    </div>
+                    <button class="collapsible">Ratings & Reviews</button>
+                    <div class="content">
+                        <h6></h6>
+                    </div>
+            </div>
+        </div>
+        <div class="related-container">
+            <h3>You Might Also Like</h3>
+            <div class="related-cards">
+                <div class="related-card">
+                    <div class="related-card-img"><a href="#"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></a></div>
+                </div>
+                <div class="related-card">
+                    <div class="related-card-img"><a href="#"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></a></div>
+                </div>
+                <div class="related-card">
+                    <div class="related-card-img"><a href="#"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></a></div>
+                </div>
+            </div>
+                
+
+            </div>
 
         </div>
+     
     </main>
     <footer>
         <section class="footer">
@@ -146,6 +235,10 @@
 
     </footer>
 <script src="/scripts/navbar.js"></script>
+<script src="/scripts/quantity-drop.js"></script>
+<script src="/scripts/collapsible.js"></script>
+
+
 
 
 </body>

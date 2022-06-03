@@ -41,3 +41,4 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("menu-furniture").click();
   }
 });
+

@@ -73,50 +73,71 @@
             <h5 class=table-caption>Explore the Full Black Orpheus Table Range! Australian Made and Crafted From <br> Pure LVB Timber</h5>
         </div>
         <div class="refine">
-            <div class="filters" style="width:200px;">
-                <select>
-                    <option>Filter</option>
-                    <option value="0">All</option>
-                    <option value="1">Dining</option>
-                    <option value="2">Living</option>
-                    <option value="3">Coffee</option>
-                    <option value="4">Bedside</option>
-                </select>
+            <div class="select-wrapper1">
+                <div class="select">
+                    <div class="select-trigger">
+                          <div class = select-box>
+                            <p class=filters>Filters</p>  
+                            <span>All</span>
+                          </div>
+                          <div class="arrow"></div>
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option selected" >All</span>
+                        <span class="custom-option" >Dining</span>
+                        <span class="custom-option" >Living</span>
+                        <span class="custom-option" >Bedside</span>
+                        <span class="custom-option" >Outdoor</span>
+                    </div>
+                </div>
             </div>
-            <div class="sortby" style="width:200px;">
-                <select>
-                    <option>Sort By</option>
-                    <option value="0">Best Selling</option>
-                    <option value="1">Alphabetically, A-Z</option>
-                    <option value="2">Alphabetically, Z-A</option>
-                    <option value="3">Price, low to high</option>
-                    <option value="4">Price, high to low</option>
-                    <option value="4">Date, new to old</option>
-                    <option value="4">Date, old to new</option>
-                </select>
+            <div class="select-wrapper2">
+                <div class="select">
+                    <div class="select-trigger">
+                          <div class = select-box>
+                            <p class=filters>Sort By</p>  
+                            <span>Best Selling</span>
+                          </div>
+                          <div class="arrow"></div>
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option selected" >Best Selling</span>
+                        <span class="custom-option" >Alphabetically, A-Z</span>
+                        <span class="custom-option" >Alphabetically, Z-A</span>
+                        <span class="custom-option" >Price, low to high</span>
+                        <span class="custom-option" >Date, new to old</span>
+                        <span class="custom-option" >Price, high to low</span>
+                        <span class="custom-option" >Date, old to new</span>
+                    </div>
+                </div>
             </div>
+
         </div>
         
         <div class="product-cards">
  
             <div class="product-card">
-                <div class="product-card-img"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></div>
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></a></div>
                 <span class="save-banner">Save $200.00</span>
                 <div class="card-info">
-                    <p class="card-title">Tasmania Mahogany Drawer</p>
-                    <div class="card-price">
-                        <p>$459.00</p>
-                        <p class="card-price-strike">$659.00</p>
-    
-                    </div>
-                    <div class="card-bottom">
-                        <div class="stars">
-                            <div class="fa fa-star star-checked"></div>
-                            <div class="fa fa-star star-checked"></div>
-                            <div class="fa fa-star star-checked"></div>
-                            <div class="fa fa-star star-checked"></div>
-                            <div class="fa fa-star-half-full star-half"></div>
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
                         </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
                         <p class="rating-amount">(32)</p>
                         <div class="color-mat">
                             <button type="button" class="square" style="background-color: #322015;"></button>
@@ -185,8 +206,7 @@
 
 <script src="/scripts/navbar.js"></script>
 
-<script src="/scripts/filter.js"></script>
-<script src="/scripts/sortby.js"></script>
+<script src="/scripts/refine.js"></script>
 
 </body>
 </html>
