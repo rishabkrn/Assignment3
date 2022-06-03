@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 @font-face {  
   font-family: "Runalto";
-  src: url(fonts/Runalto.otf) format("opentype");
+  src: url(/fonts/Runalto.otf) format("opentype");
 }
 
 
@@ -11,24 +11,60 @@ body{
 }
 :root{
     background-color: rgb(28, 28, 28); 
-    border: none;
-    
+    border: none;   
     
 }
 
+h1{
+    font-family: 'Runalto', serif;
+    color: #C7AC68;
+    font-size: 5em;
+    font-weight: 100;
+}
 h2{
-    font-family: Runalto;
+    font-family: 'Runalto', serif;
     color: #e7e7e7;
     text-align: center;
     font-size: 3em;
     margin-bottom: 50px;
     font-weight: 100;
 }
+h3{
+    color: white;
+    font-family: 'Runalto', serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h4{
+    color: rgb(174, 174, 174);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    max-width: 60%;
+}
+h5{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+}
+h6{
+    color: rgb(223, 223, 223);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+
+}
+
+
+
 
 
 .parallax {
-    background-image: url('images/slide-1-home.jpg');
-    min-height: 90vh;
+    background-image: url('/images/slide-1-home.jpg');
+    min-height: 100vh;
+    margin-top: -100px;
     background-attachment: fixed;
     background-position: center ;
     background-repeat: no-repeat;
@@ -102,6 +138,11 @@ h2{
     display: flex;
     justify-content: center;
 }
+
+.cards a{
+    text-decoration: none;
+
+}
 .card button {
     display: flex;
     outline: 0;
@@ -118,16 +159,22 @@ h2{
     vertical-align: center;
     margin-bottom: 30px;
     border-style: solid;
+    transition: background-color .3s;
+    padding-bottom: 15px;
+
+
+
     
 }
   
 .card button:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+    
+
 
 }
 .cards {
-
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);   
@@ -138,7 +185,6 @@ h2{
     align-items: center;
     margin-right: 100px;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.517));
-    
 }
      
      
@@ -152,5 +198,57 @@ h2{
     object-fit: cover;
     object-position: bottom;
 
+}
+
+
+
+
+/* confirmation page */
+
+.confirmation-bg{
+    width: 110%;
+    margin-top: -600px;
+    max-height: 140vh;
+    object-position: center;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+.confirmationwidth{
+    width: 100%;
+    overflow-x: hidden;
+
+}
+.confirmtext{
+    text-align: center;
+    margin-top: -250px;
+    width: 85%;
+    background-color: #141414;
+    z-index: 10;
+    height: 70vh;
+    vertical-align: top;
+}
+
+.confirmcard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -100px;
+}
+
+.continue-shopping{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    color: #C7AC68;
+    text-decoration: none;
+    font-size: 0.7em;
+    text-align: center;
+    justify-content: center;
+    transition: color .3s;
+
+}
+.continue-shopping:hover{
+    color: #ffffff;
 }
 

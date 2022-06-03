@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Important for search optimisation SEO-->
+    <meta name=description content="Black Orpheus Furniture make your House a Home Designer & Leather Bags to carry the Load, Lamps to light up your Life Objects of Desire Full fill the need." >
+    <meta name=author content="Rishab Kiran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Orpheus</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/catalogue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    
+    <div class="notice">
+        <a href="">Delivering Contactless & Australia Wide</a>
+    </div>
+    <header id=navbar class="navbar">
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidemenu">
+                <a id=menu-furniture href="catalogue.html">Furniture</a>
+                <a href="#">Homeware</a>
+                <a href="#">Lighting</a>
+                <a href="#">Mirrors</a>
+                <a href="#">Wall Decor</a>
+                <a href="#">Bags</a>
+                <a href="#">Sale</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Account</a>
+            </div>
+          </div>
+        <div class="logo">
+            <a href="index.html"> <img src="images/logo.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><button onclick="toggleSearch()"><img src="/images/ico_menu-search.svg" alt=""></button></li>
+                <li><a href=""><img src="/images/ico_menu-account.svg" alt=""></a></li>
+                <li>
+                    <a href=""><img src="/images/ico_menu-cart.svg"alt=""></a>
+                    <span class='cart-badge' id='cart-count'> 1 </span>
+
+                </li>
+                <div class="menuhover">
+                    <span onclick="openNav()">
+                        <ai><a >MENU<alt=""></a></li> 
+                        <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
+                    </span>      
+                </div>         
+                
+            </ul>
+        
+        </nav>
+
+    </header>
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="Search...">
+        <hr class="search-underline">
+
+    </div>
+    <main>
+        <div id=cattop-bg class="cattop-bg">
+            <h1 class=table-header>Tables</h1>
+            <h5 class=table-caption>Explore the Full Black Orpheus Table Range! Australian Made and Crafted From <br> Pure LVB Timber</h5>
+        </div>
+        <div class="refine">
+            <div class="filters" style="width:200px;">
+                <select>
+                    <option>Filter</option>
+                    <option value="0">All</option>
+                    <option value="1">Dining</option>
+                    <option value="2">Living</option>
+                    <option value="3">Coffee</option>
+                    <option value="4">Bedside</option>
+                </select>
+            </div>
+            <div class="sortby" style="width:200px;">
+                <select>
+                    <option>Sort By</option>
+                    <option value="0">Best Selling</option>
+                    <option value="1">Alphabetically, A-Z</option>
+                    <option value="2">Alphabetically, Z-A</option>
+                    <option value="3">Price, low to high</option>
+                    <option value="4">Price, high to low</option>
+                    <option value="4">Date, new to old</option>
+                    <option value="4">Date, old to new</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="product-cards">
+ 
+            <div class="product-card">
+                <div class="product-card-img"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <p class="card-title">Tasmania Mahogany Drawer</p>
+                    <div class="card-price">
+                        <p>$459.00</p>
+                        <p class="card-price-strike">$659.00</p>
+    
+                    </div>
+                    <div class="card-bottom">
+                        <div class="stars">
+                            <div class="fa fa-star star-checked"></div>
+                            <div class="fa fa-star star-checked"></div>
+                            <div class="fa fa-star star-checked"></div>
+                            <div class="fa fa-star star-checked"></div>
+                            <div class="fa fa-star-half-full star-half"></div>
+                        </div>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a href="catalogue.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pagination">
+            <a href="#"class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+        
+    </main>
+    <footer>
+        <section class="footer">
+            <hr class="divider-1">
+            <section class="footer1">
+                <div class="newsletter">
+                    <h3>Stay In The Loop</h3>
+                    <div class="signuplayout">
+                        <form>
+                            <img src="/images/ico-newsletter.png" alt="">
+                            <input type="newsbox" placeholder="Email address" >
+                        </form>
+                        <span class="signupbtn" style="vertical-align: middle">SIGN UP</span>
+                    </div>
+                    <h4>Get exclusive details on new products and receive special offers </h4>
+                </div>
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href=""><li><img src="/images/facebook.svg"  alt=""></li></a>
+                        <a href=""><li><img src="/images/instagram.svg"  alt=""></li></a>
+                        <a href=""><li><img src="/images/pinterest.svg" alt=""></li></a>
+                        <a href=""><li><img src="/images/twitter.svg"  alt=""></li></a>
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider-2">
+            <div class="payfooter">
+                <ul>
+                    <li><img src="/images/ico_amex.svg" alt=""></li>
+                    <li><img src="/images/ico_mastercard.svg" alt=""></li>
+                    <li><img src="/images/ico_visa.svg" alt=""></li>
+                    <li><img src="/images/ico_paypal.svg" alt=""></li>
+                    <li><img src="/images/ico_zippay_3.svg" alt=""></li>
+                </ul>
+            </div>
+            <h4>© 2022 Black Orpheus Emporium</h4>
+        </section>
+
+    </footer>
+
+<script src="/scripts/navbar.js"></script>
+
+<script src="/scripts/filter.js"></script>
+<script src="/scripts/sortby.js"></script>
+
+</body>
+</html>

@@ -8,20 +8,22 @@
     <meta name=author content="Rishab Kiran">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Orpheus</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
-<body>
+<body" >
     <!-- Represents content of the document -->
+    <!-- Anouncement Banner -->
     <div class="notice">
         <a href="">Delivering Contactless & Australia Wide</a>
     </div>
+    <!-- Navigation Bar -->
     <header id=navbar class="navbar">
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="sidemenu">
-                <a href="#">Furniture</a>
+                <a id=menu-furniture href="catalogue.html">Furniture</a>
                 <a href="#">Homeware</a>
                 <a href="#">Lighting</a>
                 <a href="#">Mirrors</a>
@@ -38,9 +40,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href=""><img src="images/ico_menu-search.svg" alt=""></a></li>
-                <li><a href=""><img src="images/ico_menu-account.svg" alt=""></a></li>
-                <li><a href=""><img src="images/ico_menu-cart.svg"alt=""></a></li>
+                <li><button onclick="toggleSearch()"><img src="/images/ico_menu-search.svg" alt=""></button></li>
+                <li><a href=""><img src="/images/ico_menu-account.svg" alt=""></a></li>
+                <li><a href=""><img src="/images/ico_menu-cart.svg"alt=""></a></li>
                 <div class="menuhover">
                     <span onclick="openNav()">
                         <ai><a >MENU<alt=""></a></li> 
@@ -51,37 +53,40 @@
             </ul>
         
         </nav>
-    </header>
-    
 
+    </header>
+    <div id="search" style="display:none">
+        <input class="searchbox" type="text" placeholder="Search...">
+        <hr class="search-underline">
+
+    </div>
+    <!-- home background -->
     <div class="parallax"></div>
 
 
-    <h2>Featured Collections</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="images/dining.jpg" alt="Denim Jeans" style="width:100%">
-            <p class="description">Popular vintage and exclusive timber dining range that will fit into any home.</p>
-            <p class="featuredbutton"><button>Shop Dining</button></p>
-        </div>
-        <div class="card">
-            <img src="images/couch.jpg" alt="Denim Jeans" style="width:100%">
-            <p class="description">Comforting Italian leather lounge sets, perfect for your creative space</p>
-            <p class="featuredbutton"><button>Shop Lounges</button></p>
-        </div>
-        <div class="card">
-            <img src="images/coffee.jpg" alt="Denim Jeans" style="width:100%">
-            <p class="description">Space and storage efficient coffee tables built to last.</p>
-            <p> </p>
-            <p class="featuredbutton"><button>Shop Tables</button></p>
-        </div>
-    </div>
-
+    <!-- featured collections grid cards -->
     <main>
-        <div>
-            
+        <h2>Featured Collections</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/dining.jpg" alt="dining" style="width:100%">
+                <p class="description">Popular vintage and exclusive timber dining range that will fit into any home.</p>
+                <a href="catalogue.html"><p class="featuredbutton"><button>Shop Dining</button></p></a>
+            </div>
+            <div class="card">
+                <img src="images/couch.jpg" alt="couch" style="width:100%">
+                <p class="description">Comforting Italian leather lounge sets, perfect for your creative space</p>
+                <a href="catalogue.html"><p class="featuredbutton"><button>Shop Lounges</button></p></a>
+            </div>
+            <div class="card">
+                <img src="images/coffee.jpg" alt="table" style="width:100%">
+                <p class="description">Space and storage efficient coffee tables built to last.</p>
+                <a href="catalogue.html"><p class="featuredbutton"><button>Shop Tables</button></p></a>
+            </div>
         </div>
     </main>
+
+    <!-- footer -->
     <footer>
         <section class="footer">
             <hr class="divider-1">
@@ -100,11 +105,10 @@
                 <div class="social">
                     <h3>Follow Us</h3>
                     <ul>
-                        <li><img src="/images/ico_amex.svg" alt=""></li>
-                        <li><img src="images/ico_mastercard.svg" alt=""></li>
-                        <li><img src="images/ico_visa.svg" alt=""></li>
-                        <li><img src="images/ico_paypal.svg" alt=""></li>
-                        <li><img src="images/ico_zippay_3.svg" alt=""></li>
+                        <a href=""><li><img src="/images/facebook.svg"  alt=""></li></a>
+                        <a href=""><li><img src="/images/instagram.svg"  alt=""></li></a>
+                        <a href=""><li><img src="/images/pinterest.svg" alt=""></li></a>
+                        <a href=""><li><img src="/images/twitter.svg"  alt=""></li></a>
                     </ul>
                 </div>
             </section>
@@ -112,10 +116,10 @@
             <div class="payfooter">
                 <ul>
                     <li><img src="/images/ico_amex.svg" alt=""></li>
-                    <li><img src="images/ico_mastercard.svg" alt=""></li>
-                    <li><img src="images/ico_visa.svg" alt=""></li>
-                    <li><img src="images/ico_paypal.svg" alt=""></li>
-                    <li><img src="images/ico_zippay_3.svg" alt=""></li>
+                    <li><img src="/images/ico_mastercard.svg" alt=""></li>
+                    <li><img src="/images/ico_visa.svg" alt=""></li>
+                    <li><img src="/images/ico_paypal.svg" alt=""></li>
+                    <li><img src="/images/ico_zippay_3.svg" alt=""></li>
                 </ul>
             </div>
             <h4>© 2022 Black Orpheus Emporium</h4>
@@ -123,6 +127,6 @@
 
     </footer>
 
-    <script src="navbar.js"></script>
+<script src="/scripts/navbar.js"></script>
 </body>
 </html>

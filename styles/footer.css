@@ -46,7 +46,6 @@ hr.divider-2{
 
 form{
     display: flex;
-    margin-top: -10px;
     background-color: white;
     width: 100%;
    
@@ -55,7 +54,6 @@ form input{
     border: 0;
     border-radius: 0;
     border-width: 0;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -87,18 +85,18 @@ form img{
 }
 
 .signupbtn{
-    margin-top: -10px;
     color: rgb(0, 0, 0);
     width: 110px;
     font-size: 18px;
     background-color: rgb(199,172,104);
     margin-left: 10px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
     padding-top: 8px;
     cursor: pointer;
+    transition: background-color .3s;
+
 
 
 }
@@ -113,5 +111,50 @@ form img{
 }
 
 .payfooter{
+    margin-left: -40px;
+}
+
+.social ul li{
+    margin-top: -2.5px;
+    display: inline-flex;
+    border: 0;
+    border-radius: 100%;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    vertical-align: middle;
+    transition: background-color .3s;
+
+    
+}
+.social ul li:hover{
+    margin-top: -2.5px;
+    display: inline-flex;
+    border: 0;
+    border-radius: 100%;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+
+.social ul a{
+    margin-right: 20px;
+}
+
+.social ul li img{
+    width: 30px;
+    padding: 5px; 
+    transition: background-color .3s;
+
+}
+
+.social ul a li img:hover{
+    filter: invert(100%);
+}
+.social ul{
     margin-left: -40px;
 }
