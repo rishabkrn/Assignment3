@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
 </head>
 <body" >
     <!-- Represents content of the document -->
@@ -45,7 +46,7 @@
                 <li><a href="cart.html"><img src="/images/ico_menu-cart.svg"alt=""></a></li>
                 <div class="menuhover">
                     <span onclick="openNav()">
-                        <ai><a >MENU<alt=""></a></li> 
+                        <ai><a class="menu">MENU<alt=""></a></li>
                         <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
                     </span>      
                 </div>         
@@ -55,11 +56,68 @@
         </nav>
 
     </header>
+   
     <div id="search" style="display:none">
         <input class="searchbox" type="text" placeholder="Search...">
         <hr class="search-underline">
 
     </div>
+    <span class="cart-section">
+        
+        <div>
+            <img src="/images/icon-drawer.png" alt="">
+            <p class="cart-number">1</p>
+        </div>
+        
+        <span id=cart-footer class="cart-footer">
+            <div onclick="toggleCart()" class="cart-panel">
+
+                <a style="text-decoration: none;"><p >CART</p></a>
+            </div>             
+        </span>
+      
+    </span>
+
+    <div id="cartslide" class="cartslide">
+        <h1 >Cart</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+        <div class="cartmenu">
+
+            <section id="cart" class="cart-wrap">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                             <td>Product</td>
+                             <td></td>
+                             <td>Price</td>
+                             <td>Quantity</td>
+                             <td style="text-align: right;">Subtotal</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="/images/product-photograph-4.png" alt=""></td>
+                            <td>
+                                <h3 style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3>
+                                <br>6 Drawer Timber Coffee Table.
+                                <br>Dimensions: 90cm x 70cm x 40cm
+                                <br>Colour: Timber Brown <br><br>
+                                <a class=remove href="">Remove</a>
+                            </td>
+                            <td style="font-size: 1.5em;font-weight: 400;">$459.00</td>
+                            <td>
+                                <button onclick="dec('amount')">-</button>
+                                <input name="amount" type="number" value="1">
+                                <button onclick="inc('amount')">+</button> 
+                            </td>
+                            <td style="font-size: 1.5em;font-weight: 500;">$459.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+      </div>
+
     <!-- home background -->
     <div class="parallax"></div>
 

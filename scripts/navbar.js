@@ -42,3 +42,23 @@ input.addEventListener("keypress", function(event) {
   }
 });
 
+function openCart() {
+  document.getElementById("cartslide").style.height = "100vh";
+
+}
+
+function closeCart() {
+  document.getElementById("cartslide").style.height = "0px";
+
+}
+
+function toggleCart() {
+  var element = document.getElementById("cartslide");
+  if (element.style.height == "100vh") {
+      element.style.height = "0px";
+
+  } else {
+      element.style.height = "100vh";
+
+  }
+}
