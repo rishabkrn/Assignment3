@@ -69,6 +69,7 @@ header{
   background-color: rgb(17, 17, 17); 
   overflow-x: hidden; /* stops horizontal scrolling */
   padding-top: -50px; 
+
   transition: 0.5s; /* animation transition time */
 }
   /* The navigation menu links */
@@ -82,16 +83,7 @@ header{
     display: block;
     transition: 0.3s;
 }
-.cartslide a {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    padding: 8px 8px 30px 50px; 
-    text-decoration: none;
-    font-size: 1.3em;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+
 
 .sidemenu{
   margin: 60px;

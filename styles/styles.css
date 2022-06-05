@@ -240,11 +240,42 @@ h6{
 
 
 @media screen and (max-width: 2000px){
-
+        .confirmation-bg{
+            width: 110%;
+            margin-top: -600px;
+            max-height: 140vh;
+            object-position: center;
+            object-fit: cover;
+            overflow-x: hidden;
+        }
+    
+        .confirmtext{
+            margin-top: -600px;
+            padding-left: 20px;
+            padding-right: 30px;
+          
+        }
+    
 }
   
 @media screen and (max-width: 1300px){
-   
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -600px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    .confirmtext{
+        text-align: center;
+        margin-top: -250px;
+        width: 85%;
+        background-color: #141414;
+        z-index: 10;
+        height: 70vh;
+        vertical-align: top;
+    }
 }
   
 @media screen and (max-width: 1100px){
@@ -294,6 +325,22 @@ h6{
 
   
 @media screen and (max-width: 767px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -400px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    
+    .confirmationwidth{
+        width: 100%;
+        overflow-x: hidden;
+    
+    }
+  
+
 
     .cards {
         display: grid;
@@ -350,6 +397,44 @@ h6{
 
 }
 
+  
+@media screen and (max-width: 600px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -200px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+
+    .confirmtext{
+        margin-top: -260px;
+        padding-left: 20px;
+        padding-right: 30px;
+      
+    }
+
+      
+@media screen and (max-width: 420px){
+    .confirmation-bg{
+        width: 110%;
+        margin-top: -100px;
+        max-height: 140vh;
+        object-position: center;
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+
+    .confirmtext{
+        margin-top: -250px;
+        padding-left: 20px;
+        padding-right: 30px;
+      
+    }
+}
+    
+}
 @media screen and (max-width: 420px){
     .cards {
         display: grid;

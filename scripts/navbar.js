@@ -54,11 +54,11 @@ function closeCart() {
 
 function toggleCart() {
   var element = document.getElementById("cartslide");
-  if (element.style.height == "100vh") {
+  if (element.style.height == "90vh") {
       element.style.height = "0px";
 
   } else {
-      element.style.height = "100vh";
+      element.style.height = "90vh";
 
   }
 }
