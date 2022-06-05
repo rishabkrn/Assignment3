@@ -62,7 +62,7 @@ h6{
 
 
 .parallax {
-    background-image: url('/images/slide-1-home.jpg');
+    background-image: url('images/slide-1-home.jpg');
     min-height: 100vh;
     margin-top: -100px;
     background-attachment: fixed;
