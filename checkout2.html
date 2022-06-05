@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <script src="/scripts/navbar.js"></script>
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/checkout2.css">
 
 </head>
 <body>
+    <!-- Represents content of the document -->
+    <!-- Anouncement Banner -->
     <div class="notice">
         <a href="">Delivering Contactless & Australia Wide</a>
     </div>
@@ -114,16 +117,85 @@
       </div>
 
     <main>
-       <div class="confirmationwidth"><img class="confirmation-bg" src="/images/confirmation-bg.jpg" alt=""></div>
-       <span class="confirmcard">
-            <div class="confirmtext">
-                <h1 style="margin-bottom: -10px; margin-top: 70px;">Thank You!</h1>
-                <h5>Your order is complete. <br>You will be receiving a confirmation email with order details <br> shortly.</h5>
-                <a class="continue-shopping"  href="catalogue.html">Continue Shopping</a>
+      <div  class="back-span" style="margin-left: 150px;margin-top: 50px">
+        <i class="back left"></i>
+        <a  href="checkout1.html"  class="back-text">BACK</a>
+      </div>
+      <div><h1 style="text-align: center;">Check Out</h1></div>
+      
+      <div class="row">
+        <div class="containerspan">
+          <div class="container">
+            <form action="checkout3.html">
+            
+              <div class="row">
+                <div class="formspan">
+                    <p class="submittedinfo1">johndoe@gmail.com<a href="checkout1.html"><span class="change">Change</span></a></p>
+                    <span><hr style="width: 90%;"></span>
+                    <p class="submittedinfo3">4Johns Road, Tilted Towers Vic 3000, Australia<a href="checkout1.html"><span class="change">Change</span></a></p>
+
+                  <h3>Shipping Method</h3>
+                  <p class="shipping">Pickup (Warehouse)<span class="ship-options">
+                    Free
+                  </span></p>
+                  <p class="shipping">Standard<span class="ship-options">
+                    $39.00
+                  </span></p>
+                  <p class="shipping">Metro<span class="ship-options">
+                    $81.00
+                  </span></p>
+                  <p class="shipping">EMS<span class="ship-options">
+                    $140.00
+                  </span></p>
+                  <p class="shipping">DHL<span class="ship-options">
+                    $230.00
+                  </span></p>
+                  
                 
+          
+          
+
+
+              </div>
+                
+                
+              </div>
+              <div>
+                <input type="submit" value="CONTINUE TO PAYMENT" class="checkout-btn">
+                <a  class="returnlink" onclick="" href="checkout1.html">Return To Information</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="cartspan">
+          
+          <div class="cart">
+            <div class="checkoutcart">
+              <a href="product.html"><img class=checkoutcart-img src="/images/product-photograph-4.png" alt=""></a>
+    
+              <div>
+                <a style="text-decoration: none;" href="product.html"><h3 class="checkoutcart-title" style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3></a>
+                <div class="checkoutcart-desc">
+                    <br>6 Drawer Timber Coffee Table.
+                    <br>Dimensions: 90cm x 70cm x 40cm
+                    <br>Colour: Timber Brown <br><br>
+                </div>
+              </div>
             </div>
-       </span>
+            <p>Subtotal<span class="subprice">$2754.00</span>
+            <p>Shipping<span class="atnextstep">Free</span>
+
+       
+            <hr>
+            <p>Total <span class="totprice"><b>$2754.00</b></span></p>
+          </div>
+        </div>
+      </div>
+
+
     </main>
+
+    <!-- footer -->
     <footer>
         <section class="footer">
             <hr class="divider-1">
@@ -163,5 +235,8 @@
         </section>
 
     </footer>
+
+<script src="/scripts/navbar.js"></script>
+<script src="/scripts/cart.js"></script>
 </body>
 </html>

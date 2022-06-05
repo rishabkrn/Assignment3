@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <script src="/scripts/navbar.js"></script>
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/checkout1.css">
 
 </head>
-<body>
+<body" >
+    <!-- Represents content of the document -->
+    <!-- Anouncement Banner -->
     <div class="notice">
         <a href="">Delivering Contactless & Australia Wide</a>
     </div>
@@ -114,16 +117,91 @@
       </div>
 
     <main>
-       <div class="confirmationwidth"><img class="confirmation-bg" src="/images/confirmation-bg.jpg" alt=""></div>
-       <span class="confirmcard">
-            <div class="confirmtext">
-                <h1 style="margin-bottom: -10px; margin-top: 70px;">Thank You!</h1>
-                <h5>Your order is complete. <br>You will be receiving a confirmation email with order details <br> shortly.</h5>
-                <a class="continue-shopping"  href="catalogue.html">Continue Shopping</a>
+      <div  class="back-span" style="margin-left: 150px;margin-top: 50px">
+        <i class="back left"></i>
+        <a  id=cartlink onclick="" href="cart.html"  class="back-text">BACK</a>
+      </div>
+      <div><h1 style="text-align: center;">Check Out</h1></div>
+      
+      <div class="row">
+        <div class="containerspan">
+          <div class="container">
+            <form action="checkout2.html">
+            
+              <div class="row">
+                <div class="formspan">
+                  <h3>Contact Information</h3>
+                  <input type="text" id="email" name="email" placeholder="Email Address">
+                  <h3>Shipping Information</h3>
+                  <input type="text" id="country" name="country" placeholder="Country/Region">
+
+                  <div class="row names">
+                    <div class="col1">
+                      <input type="text" id="fname" name="firstname" placeholder="First Name">
+                    </div>
+                    <div class="col2">
+                      <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                    </div>
+                  </div>
+              
+
+                  <input type="text" id="adr" name="address" placeholder="Address">
+                  <input type="text" id="apt" name="apt" placeholder="Apartment, suite, etc. (optional)">
+
+                  <div class="row">
+                    <div class="col1">
+                      <input type="text" id="suburb" name="suburb" placeholder="Suburb">
+                    </div>
+                    <div class="col2-3">
+                      <input type="text" id="state" name="state" placeholder="State/Territory">
+                    </div>
+                    <div class="col3">
+                      <input type="text" id="zip" name="zip" placeholder="Postcode ">
+                    </div>
+                  </div>
+                  <input type="text" id="phone" name="city" placeholder="Phone">
+
+
+              </div>
                 
+                
+              </div>
+              <div>
+                <input type="submit" value="CONTINUE TO SHIPPING" class="checkout-btn">
+                <a id=returnlink class="returnlink" onclick="" href="cart.html">Return To Cart</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="cartspan">
+          
+          <div class="cart">
+            <div class="checkoutcart">
+              <a href="product.html"><img class=checkoutcart-img src="/images/product-photograph-4.png" alt=""></a>
+    
+              <div>
+                <a style="text-decoration: none;" href="product.html"><h3 class="checkoutcart-title" style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3></a>
+                <div class="checkoutcart-desc">
+                    <br>6 Drawer Timber Coffee Table.
+                    <br>Dimensions: 90cm x 70cm x 40cm
+                    <br>Colour: Timber Brown <br><br>
+                </div>
+              </div>
             </div>
-       </span>
+            <p>Subtotal<span class="subprice">$2754.00</span>
+            <p>Shipping<span class="atnextstep">Calculated at next step</span>
+
+       
+            <hr>
+            <p>Total <span class="totprice"><b>$2754.00</b></span></p>
+          </div>
+        </div>
+      </div>
+
+
     </main>
+
+    <!-- footer -->
     <footer>
         <section class="footer">
             <hr class="divider-1">
@@ -163,5 +241,8 @@
         </section>
 
     </footer>
+
+<script src="/scripts/navbar.js"></script>
+<script src="/scripts/cart.js"></script>
 </body>
 </html>

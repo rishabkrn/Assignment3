@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cart.css">
-    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="stylesheet" href="./styles/checkout3.css">
 
 </head>
 <body" >
@@ -112,54 +112,50 @@
         <hr class="cart-divider">
 
         <div class="cart-button">
-            <a href="checkout.html" class="cart-checkout" style="color: Black; font-weight: 600;">CHECKOUT</a>
+            <a href="checkout1.html" class="cart-checkout" style="color: Black; font-weight: 600;">CHECKOUT</a>
         </div>
       </div>
 
     <main>
       <div  class="back-span" style="margin-left: 150px;margin-top: 50px">
         <i class="back left"></i>
-        <a  id=cartlink onclick="" href="cart.html"  class="back-text">BACK</a>
+        <a  href="checkout2.html"  class="back-text">BACK</a>
       </div>
       <div><h1 style="text-align: center;">Check Out</h1></div>
       
       <div class="row">
         <div class="containerspan">
           <div class="container">
-            <form action="/action_page.php">
+            <form action="confirmation.html">
             
               <div class="row">
                 <div class="formspan">
-                  <h3>Contact Information</h3>
-                  <input type="text" id="email" name="email" placeholder="Email Address">
-                  <h3>Shipping Information</h3>
-                  <input type="text" id="country" name="country" placeholder="Country/Region">
+                    <p class="submittedinfo1">johndoe@gmail.com<a href="checkout1.html"><span class="change">Change</span></a></p>
+                    <span><hr style="width: 90%;"></spa>
+                    <p class="submittedinfo2">4Johns Road, Tilted Towers Vic 3000, Australia<a href="checkout1.html"><span class="change">Change</span></a></p>
+                    <span><hr style="width: 90%;"></spa>
+                    <p class="submittedinfo3">Pickup (Melbourne Warehouse) - Free<a href="checkout2.html"><span class="change">Change</span></a></p>
 
-                  <div class="row">
-                    <div class="col1">
-                      <input type="text" id="fname" name="firstname" placeholder="First Name">
-                    </div>
-                    <div class="col2">
-                      <input type="text" id="lname" name="lastname" placeholder="Last Name">
-                    </div>
+                  <h3>Payment</h3>
+                  <h6 style="margin-top: -10px;">All transactions are secure and encrypted. </h6>
+                  <p class="paymenthead">Credit Card<span class="paymenticons">
+                    <img src="/images/ico_amex.svg" alt="">
+                    <img src="/images/ico_mastercard.svg" alt="">
+                    <img src="/images/ico_visa.svg" alt="">
+                  </span></p>
+                  
+                  
+                  <div class="paymentwindow">
+                      <input type="number" id="cardno" name="cardnumber" placeholder="Card Number">
+                      <input type="text" id="cardname" name="cardname" placeholder="Name on Card">
+                      <input type="text" id="expiry" name="expiry" placeholder="Expiration Date (MM/YY)">
+                      <input type="number" id="code" name="securitycode" placeholder="Security Code">
                   </div>
-              
-
-                  <input type="text" id="adr" name="address" placeholder="Address">
-                  <input type="text" id="apt" name="apt" placeholder="Apartment, suite, etc. (optional)">
-
-                  <div class="row">
-                    <div class="col1">
-                      <input type="text" id="suburb" name="suburb" placeholder="Suburb">
-                    </div>
-                    <div class="col2-3">
-                      <input type="text" id="state" name="state" placeholder="State/Territory">
-                    </div>
-                    <div class="col3">
-                      <input type="text" id="zip" name="zip" placeholder="Postcode ">
-                    </div>
-                  </div>
-                  <input type="text" id="phone" name="city" placeholder="Phone">
+                  <p  class="paymentpaypal">PayPal<span class="paymenticons">
+                    <img src="/images/ico_paypal.svg" alt="">
+                </span></p>
+          
+          
 
 
               </div>
@@ -167,8 +163,8 @@
                 
               </div>
               <div>
-                <input type="submit" value="CONTINUE TO SHIPPING" class="checkout-btn">
-                <a id=returnlink class="returnlink" onclick="" href="cart.html">Return To Cart</a>
+                <input type="submit" value="PLACE ORDER" class="checkout-btn">
+                <a  class="returnlink" onclick="" href="checkout1.html">Return To Shipping</a>
               </div>
             </form>
           </div>
@@ -189,7 +185,7 @@
               </div>
             </div>
             <p>Subtotal<span class="subprice">$2754.00</span>
-            <p>Shipping<span class="atnextstep">Calculated at next step</span>
+            <p>Shipping<span class="atnextstep">Free</span>
 
        
             <hr>

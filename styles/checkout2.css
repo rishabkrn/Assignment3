@@ -5,6 +5,7 @@
   	border-radius: 3px;
     border-radius: 0;
     overflow-x: hidden;
+    height: 100vh;
 
 
  }
@@ -70,6 +71,96 @@
   border-radius: 0px;
 }
 
+.change{
+  float: right;
+  color: #C7AC68;
+  font-size: 0.8em;
+
+
+}
+
+.submittedinfo1{
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px;
+  padding-right: 0px;
+  background-color: #0c0c0c;
+  border: 1px solid rgb(157, 157, 157);
+  border-radius: 0;
+  color: rgb(190, 190, 190);
+  font-size: 1em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-bottom: none;
+}
+span hr{
+  float: right;
+  margin-right: 50px;
+  
+
+}
+.submittedinfo2{
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px;
+  padding-right: 0px;
+  background-color: #0c0c0c;
+  border: 1px solid rgb(157, 157, 157);
+  border-radius: 0;
+  color: rgb(190, 190, 190);
+  font-size: 1em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-top: none;
+  border-bottom: none;
+
+}
+
+.change{
+  padding-right: 20px;
+  margin-left: 20px;
+}
+.submittedinfo3{
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px;
+  padding-right: 0px;
+  background-color: #0c0c0c;
+  border: 1px solid rgb(157, 157, 157);
+  border-radius: 0;
+  color: rgb(190, 190, 190);
+  font-size: 1em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-top: none;
+}
+
+
+
+
+.paymentwindow{
+  margin-right: -14px;
+  padding: 35px 45px 25px 30px;
+  background-color: #000000;
+  border: 1px white solid;
+}
+
+.shipping{
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px;
+  padding-right: 0px;
+  background-color: #0c0c0c;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  color: white;
+  font-size: 1em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.ship-options{
+  float: right;  
+  font-weight: 600;
+  padding-right: 20px;
+  color: #C7AC68;
+}
 .row input[type=text] {
   margin: 0 auto;
   width: 100%;
@@ -81,6 +172,8 @@
   border-radius: 0;
   color: white;
   font-size: 1em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
 
 }
 
@@ -104,7 +197,7 @@ label {
   width: 96%;
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
   color: rgb(0, 0, 0);
     font-size: 1.1em;
     background-color: #C7AC68;
@@ -222,8 +315,30 @@ span.atnextstep{
 
  /*  responsiveness */
 
-@media (max-width: 1150px) {
+@media (max-width: 1700px) {
+  span hr{
+    margin-right: 35px;
+    }
+  .cartspan {
+    flex:10%;
+    padding: 0;
+}
+  .formspan {
+    flex: 10%;
+}
+  .containerspan {
+    padding: 0;
+    flex: 30%;
+}
+.checkoutcart img{
+  width: 100px;
+}
+}
 
+@media (max-width: 1150px) {
+  span hr{
+    margin-right: 10px;
+    }
     .cartspan {
         flex:30%;
     }
@@ -239,11 +354,18 @@ span.atnextstep{
 
 
 @media (max-width: 800px) {
+  .cart{
+    height: auto;
+     }
   .row {
     flex-direction: column-reverse;
   }
 .cartspan {
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-right: 20px;
+      
   }
   
 .col1{
@@ -263,14 +385,10 @@ span.atnextstep{
 	flex:20%;
     padding-right: 0px;
 }
-.cartspan {
-	
-    margin-left: 20px;
-    margin-right: 0px;
 
 
-}
 .containerspan {
+  padding: 0 35px 0 20px;
 
  
   margin-left: 20px;
@@ -283,5 +401,19 @@ span.atnextstep{
 h1{
     font-size:3em;
 }
+
 }
 
+@media (max-width: 500px) {
+    .cartspan{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+        .containerspan {
+    
+     
+        margin-left: 15px;
+    
+        }
+    }

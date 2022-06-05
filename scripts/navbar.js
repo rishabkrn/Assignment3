@@ -67,8 +67,15 @@ if (screen.width < 768) {
   document.getElementById('cartlink').setAttribute('onclick', "toggleCart()");
 
   document.getElementById('cartlink').setAttribute('href', "javascript: void(0)");
+  
 
 }
+
+
+
+ 
+
+
 
 if (screen.width < 768) {
   document.getElementById('returnlink').setAttribute('onclick', "toggleCart()");
