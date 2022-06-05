@@ -222,16 +222,8 @@
 }
 
 
-    /*the container must be positioned relative:*/
 
 
-
-
-
-
-*, *:after, *:before {
-    box-sizing: border-box;
-}
 
 .select-wrapper1 {
     position: relative;

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/catalogue.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="./styles/cart.css">
 
 </head>
 
@@ -22,20 +22,21 @@
     <div class="notice">
         <a href="">Delivering Contactless & Australia Wide</a>
     </div>
+    <!-- Navigation Bar -->
     <header id=navbar class="navbar">
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="sidemenu">
                 <a id=menu-furniture href="catalogue.html">Furniture</a>
-                <a href="#">Homeware</a>
-                <a href="#">Lighting</a>
-                <a href="#">Mirrors</a>
-                <a href="#">Wall Decor</a>
-                <a href="#">Bags</a>
-                <a href="#">Sale</a>
-                <a href="#">About</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Account</a>
+                <a href="catalogue.html">Homeware</a>
+                <a href="catalogue.html">Lighting</a>
+                <a href="catalogue.html">Mirrors</a>
+                <a href="catalogue.html">Wall Decor</a>
+                <a href="catalogue.html">Bags</a>
+                <a href="catalogue.html">Sale</a>
+                <a href="catalogue.html">About</a>
+                <a href="catalogue.html">Contact Us</a>
+                <a href="catalogue.html">Account</a>
             </div>
           </div>
         <div class="logo">
@@ -45,14 +46,10 @@
             <ul>
                 <li><button onclick="toggleSearch()"><img src="/images/ico_menu-search.svg" alt=""></button></li>
                 <li><a href=""><img src="/images/ico_menu-account.svg" alt=""></a></li>
-                <li>
-                    <a href=""><img src="/images/ico_menu-cart.svg"alt=""></a>
-                    <span class='cart-badge' id='cart-count'> 1 </span>
-
-                </li>
+                <li><a href="cart.html"><img src="/images/ico_menu-cart.svg"alt=""></a></li>
                 <div class="menuhover">
                     <span onclick="openNav()">
-                        <ai><a >MENU<alt=""></a></li> 
+                        <ai><a class="menu">MENU<alt=""></a></li>
                         <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
                     </span>      
                 </div>         
@@ -62,11 +59,64 @@
         </nav>
 
     </header>
+   
     <div id="search" style="display:none">
         <input class="searchbox" type="text" placeholder="Search...">
         <hr class="search-underline">
 
     </div>
+    <span class="cart-section">
+        
+        <div>
+            <img src="/images/icon-drawer.png" alt="">
+            <p class="cart-number">1</p>
+        </div>
+        
+        <span id=cart-footer class="cart-footer">
+            <div onclick="toggleCart()" class="cart-panel">
+
+                <a style="text-decoration: none;"><p >CART</p></a>
+            </div>             
+        </span>
+      
+    </span>
+    <div id="cartslide" class="cartslide">
+
+        <h1 style="text-align: center;font-size: 3em;">Cart</h1>
+        <hr class="cart-divider">
+
+        <div class="cart-small-grid">
+            <div>
+                <a href="product.html"><img class=cartslide-img src="/images/product-photograph-4.png" alt=""></a>
+                <div class="cartslide-quantity"> 
+                    <button class="quantity-button" onclick="dec('amount')">-</button>
+                    <input class="quantity-input" name="amount" type="number" value="1">
+                    <button class="quantity-button" onclick="inc('amount')">+</button> 
+                </div>
+            </div>
+            <div class="cart-small-grid-right">
+            
+                    <h3 class="h3cart" style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3>
+                    <div class="cartslide-desc">
+                        <br>6 Drawer Timber Coffee Table.
+                        <br>Dimensions: 90cm x 70cm x 40cm
+                        <br>Colour: Timber Brown <br><br>
+                    </div>
+                    <a class=remove href="">Remove</a>
+                    <p class="subtotal" style="text-align: right;">Subtotal</p>
+                    <p class="subtotal-price" style="text-align: right; font-size: 1.5em;font-weight: 400;">$459.00</p>
+
+
+            </div>
+
+        </div>
+        <hr class="cart-divider">
+
+        <div class="cart-button">
+            <a href="checkout.html" class="cart-checkout" style="color: Black; font-weight: 600;">CHECKOUT</a>
+        </div>
+      </div>
+
     <main>
         <div id=cattop-bg class="cattop-bg">
             <h1 class=table-header>Tables</h1>
@@ -146,7 +196,279 @@
                         </div>
                     </div>
                     <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-4.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
                         <a href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-3.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph2.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-1.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-4.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-3.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph2.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-img"><a href="product.html"><img src="/images/product-photograph-4.png" alt="table" style="width:100%"></a></div>
+                <span class="save-banner">Save $200.00</span>
+                <div class="card-info">
+                    <a href="product.html" style="text-decoration:none" ><p class="card-title">Tasmania Mahogany Drawer</p></a>
+                    <a href="product.html" style="text-decoration:none">
+                        <div class="card-price"> 
+                            <p>$459.00</p>
+                            <p class="card-price-strike">$659.00</p>
+        
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <a href="product.html" style="text-decoration:none">
+                            <div class="stars">
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star star-checked"></div>
+                                <div class="fa fa-star-half-full star-half"></div>
+                            </div>
+                        </a>
+                        <p class="rating-amount">(32)</p>
+                        <div class="color-mat">
+                            <button type="button" class="square" style="background-color: #322015;"></button>
+                            <button type="button" class="square" style="background-color: #161311;"></button>
+                            <button type="button" class="square" style="background-color: #E0E0E0;"></button>
+                        </div>
+                    </div>
+                    <div class="cat-button">
+                        <a id=cartlink onclick="" href="cart.html" class="cat-add">ADD TO CART</a>
                     </div>
                 </div>
             </div>
@@ -207,6 +529,8 @@
 <script src="/scripts/navbar.js"></script>
 
 <script src="/scripts/refine.js"></script>
+<script src="/scripts/cart.js"></script>
+
 
 </body>
 </html>

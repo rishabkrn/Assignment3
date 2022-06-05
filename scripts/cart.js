@@ -9,3 +9,4 @@ function inc(element) {
         el.value = parseInt(el.value) - 1;
     }
   }
+

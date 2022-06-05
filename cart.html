@@ -17,20 +17,21 @@
     <div class="notice">
         <a href="">Delivering Contactless & Australia Wide</a>
     </div>
+    <!-- Navigation Bar -->
     <header id=navbar class="navbar">
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="sidemenu">
                 <a id=menu-furniture href="catalogue.html">Furniture</a>
-                <a href="#">Homeware</a>
-                <a href="#">Lighting</a>
-                <a href="#">Mirrors</a>
-                <a href="#">Wall Decor</a>
-                <a href="#">Bags</a>
-                <a href="#">Sale</a>
-                <a href="#">About</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Account</a>
+                <a href="catalogue.html">Homeware</a>
+                <a href="catalogue.html">Lighting</a>
+                <a href="catalogue.html">Mirrors</a>
+                <a href="catalogue.html">Wall Decor</a>
+                <a href="catalogue.html">Bags</a>
+                <a href="catalogue.html">Sale</a>
+                <a href="catalogue.html">About</a>
+                <a href="catalogue.html">Contact Us</a>
+                <a href="catalogue.html">Account</a>
             </div>
           </div>
         <div class="logo">
@@ -40,10 +41,10 @@
             <ul>
                 <li><button onclick="toggleSearch()"><img src="/images/ico_menu-search.svg" alt=""></button></li>
                 <li><a href=""><img src="/images/ico_menu-account.svg" alt=""></a></li>
-                <li><a href=""><img src="/images/ico_menu-cart.svg"alt=""></a></li>
+                <li><a href="cart.html"><img src="/images/ico_menu-cart.svg"alt=""></a></li>
                 <div class="menuhover">
                     <span onclick="openNav()">
-                        <ai><a >MENU<alt=""></a></li> 
+                        <ai><a class="menu">MENU<alt=""></a></li>
                         <ai><a ><img class="menuico" src="images/icons8-menu.svg"><alt=""></a></li>
                     </span>      
                 </div>         
@@ -53,6 +54,7 @@
         </nav>
 
     </header>
+   
     <div id="search" style="display:none">
         <input class="searchbox" type="text" placeholder="Search...">
         <hr class="search-underline">
@@ -87,7 +89,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/images/product-photograph-4.png" alt=""></td>
+                        <td><a href="product.html"><img src="/images/product-photograph-4.png" alt=""></a></td>
                         <td>
                             <h3 style="margin-bottom: -10px; margin-top: 0px;">Tasmania Mahogany Drawer</h3>
                             <br>6 Drawer Timber Coffee Table.
@@ -98,10 +100,10 @@
                         <td style="font-size: 1.5em;font-weight: 400;">$459.00</td>
                         <td>
                             <button onclick="dec('amount')">-</button>
-                            <input name="amount" type="number" value="1">
+                            <input name="amount" type="number" value="6">
                             <button onclick="inc('amount')">+</button> 
                         </td>
-                        <td style="font-size: 1.5em;font-weight: 500;">$459.00</td>
+                        <td style="font-size: 1.5em;font-weight: 500;">$2754.00</td>
                     </tr>
                 </tbody>
             </table>
@@ -114,7 +116,7 @@
             <div class="total-right">
                 <p class="total-price">$2754.00</p>
                 <div class="cart-button">
-                    <a href="#" class="cart-checkout">PROCEED TO CHECKOUT</a>
+                    <a href="checkout.html" class="cart-checkout">PROCEED TO CHECKOUT</a>
                 </div>
             </div>
 

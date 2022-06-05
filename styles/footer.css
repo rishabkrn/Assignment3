@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 
-h3{
+/* h3{
     color: white;
     font-family: 'Runalto', sans-serif;
     font-weight: 400;
@@ -13,7 +13,7 @@ h4{
     font-weight: 300;
     font-size: 12px;
     max-width: 60%;
-}
+} */
 
 .footer1{
     display: grid;
@@ -44,13 +44,13 @@ hr.divider-2{
   
 
 
-form{
+.signuplayout form{
     display: flex;
     background-color: white;
     width: 100%;
    
 }
-form input{
+.signuplayout form input{
     border: 0;
     border-radius: 0;
     border-width: 0;
@@ -64,11 +64,11 @@ form input{
 
 
 }
-form input:focus{
+.signuplayout form input:focus{
     outline: none;
 }
 
-form img{
+.signuplayout form img{
     width: 40px;
     vertical-align: middle;
     filter: opacity(50%);

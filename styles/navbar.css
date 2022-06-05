@@ -357,6 +357,16 @@ nav ul li button{
 
 
   
+@media screen and (max-width: 3000px){
+
+.cart-section{
+  display: none;
+}
+.cart-footer{
+  display: none;
+
+}
+}
 @media screen and (max-width: 2000px){
   .notice a{
     color: #ffffff;
