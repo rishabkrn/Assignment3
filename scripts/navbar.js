@@ -34,6 +34,7 @@ function toggleSearchProduct() {
 
 
 // search enter input key listener 
+
   var input = document.getElementById("search");
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
@@ -42,6 +43,7 @@ input.addEventListener("keypress", function(event) {
   }
 });
 
+// cart slider toggle for mobile screens
 function openCart() {
   document.getElementById("cartslide").style.height = "100vh";
 
@@ -63,6 +65,8 @@ function toggleCart() {
   }
 }
 
+// redirects cart.html hrefs to the cart slider on smaller screens
+
 if (screen.width < 768) {
   document.getElementById('cartlink').setAttribute('onclick', "toggleCart()");
 
@@ -70,11 +74,6 @@ if (screen.width < 768) {
   
 
 }
-
-
-
- 
-
 
 
 if (screen.width < 768) {

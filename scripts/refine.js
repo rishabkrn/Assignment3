@@ -1,3 +1,6 @@
+
+//refine drop down functions for filters and sortby
+
 document.querySelector('.select-wrapper1').addEventListener('click', function() {
   this.querySelector('.select').classList.toggle('open');
 })
@@ -5,7 +8,6 @@ document.querySelector('.select-wrapper1').addEventListener('click', function() 
 document.querySelector('.select-wrapper2').addEventListener('click', function() {
   this.querySelector('.select').classList.toggle('open');
 })
-
 
 
 for (const option of document.querySelectorAll(".custom-option")) {
@@ -17,21 +19,12 @@ for (const option of document.querySelectorAll(".custom-option")) {
       }
   })
 }
-// document.querySelector('.select-wrapper').addEventListener('click', function () {
-//     this.querySelector('.select').classList.toggle('open');
-// })
+
 for (const dropdown of document.querySelectorAll(".select-wrapper")) {
   dropdown.addEventListener('click', function() {
       this.querySelector('.select').classList.toggle('open');
   })
 }
-
-// window.addEventListener('click', function (e) {
-//     const select = document.querySelector('.select')
-//     if (!select.contains(e.target)) {
-//         select.classList.remove('open');
-//     }
-// });
 
 window.addEventListener('click', function(e) {
   for (const select of document.querySelectorAll('.select')) {

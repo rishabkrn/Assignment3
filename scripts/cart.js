@@ -1,3 +1,6 @@
+
+//quantity button selectors that increase the number
+
 function inc(element) {
     let el = document.querySelector(`[name="${element}"]`);
     el.value = parseInt(el.value) + 1;

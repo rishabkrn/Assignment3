@@ -1,3 +1,8 @@
+
+
+//toggle - opens and closes collapsed elements in the product description
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

@@ -167,12 +167,6 @@
 
 
 
-/* .c-wrapper, .c-wrapper:after, .c-wrapper:before  {
-    box-sizing: border-box;
-} */
-
-
-
 .quantity-wrapper{
     display: flex;
     position: relative;

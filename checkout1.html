@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="./styles/checkout1.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
 
 </head>
 <body" >
@@ -126,40 +127,40 @@
       <div class="row">
         <div class="containerspan">
           <div class="container">
-            <form action="checkout2.html">
+            <form class=ship-form action="checkout2.html" >
             
               <div class="row">
                 <div class="formspan">
                   <h3>Contact Information</h3>
-                  <input type="text" id="email" name="email" placeholder="Email Address">
+                  <input type="email" id="email" name="email" required placeholder="Email Address">
                   <h3>Shipping Information</h3>
-                  <input type="text" id="country" name="country" placeholder="Country/Region">
+                  <input type="text" id="country" name="country" required placeholder="Country/Region">
 
                   <div class="row names">
                     <div class="col1">
-                      <input type="text" id="fname" name="firstname" placeholder="First Name">
+                      <input type="text" id="fname" name="firstname" required placeholder="First Name">
                     </div>
                     <div class="col2">
-                      <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                      <input type="text" id="lname" name="lastname"  placeholder="Last Name">
                     </div>
                   </div>
               
 
-                  <input type="text" id="adr" name="address" placeholder="Address">
-                  <input type="text" id="apt" name="apt" placeholder="Apartment, suite, etc. (optional)">
+                  <input type="text" id="adr" name="address" required placeholder="Address">
+                  <input type="text" id="apt" name="apt" required placeholder="Apartment, suite, etc. (optional)">
 
                   <div class="row">
                     <div class="col1">
-                      <input type="text" id="suburb" name="suburb" placeholder="Suburb">
+                      <input type="text" id="suburb" name="suburb" required placeholder="Suburb">
                     </div>
                     <div class="col2-3">
-                      <input type="text" id="state" name="state" placeholder="State/Territory">
+                      <input type="text" id="state" name="state" required placeholder="State/Territory">
                     </div>
                     <div class="col3">
-                      <input type="text" id="zip" name="zip" placeholder="Postcode ">
+                      <input type="number" id="zip" name="zip"  required placeholder="Postcode ">
                     </div>
                   </div>
-                  <input type="text" id="phone" name="city" placeholder="Phone">
+                  <input type="number" id="phone" name="city" required placeholder="Phone">
 
 
               </div>
@@ -244,5 +245,7 @@
 
 <script src="/scripts/navbar.js"></script>
 <script src="/scripts/cart.js"></script>
+<script src="/scripts/checkout.js"></script>
+
 </body>
 </html>

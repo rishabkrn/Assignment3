@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="./styles/checkout3.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
 
 </head>
 <body" >
@@ -146,10 +147,10 @@
                   
                   
                   <div class="paymentwindow">
-                      <input type="number" id="cardno" name="cardnumber" placeholder="Card Number">
-                      <input type="text" id="cardname" name="cardname" placeholder="Name on Card">
-                      <input type="text" id="expiry" name="expiry" placeholder="Expiration Date (MM/YY)">
-                      <input type="number" id="code" name="securitycode" placeholder="Security Code">
+                      <input type="number" id="cardno" name="cardnumber" required placeholder="Card Number">
+                      <input type="text" id="cardname" name="cardname" required placeholder="Name on Card">
+                      <input type="text" id="expiry" name="expiry" required maxlength="5"placeholder="Expiration Date (MM/YY)">
+                      <input type="number" id="code" name="securitycode" required maxlength="3" placeholder="Security Code">
                   </div>
                   <p  class="paymentpaypal">PayPal<span class="paymenticons">
                     <img src="/images/ico_paypal.svg" alt="">

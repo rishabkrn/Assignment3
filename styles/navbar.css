@@ -48,29 +48,29 @@ header{
 
 .sidenav {
     height: 100vh; 
-    width: 0; /* width determined by the JavaScript */
+    width: 0; 
     position: fixed;
     z-index: 300; 
     top: 2.1vh; 
     right:0;
     background-color: rgb(17, 17, 17); 
-    overflow-x: hidden; /* stops horizontal scrolling */
+    overflow-x: hidden; 
     padding-top: -50px; 
-    transition: 0.5s; /* animation transition time */
+    transition: 0.5s; 
 }
   
 
 .cartslide {
   height: 0; 
-  width: 100%; /* width determined by the JavaScript */
+  width: 100%; 
   position: fixed;
   z-index: 300; 
   bottom: 0;
   background-color: rgb(17, 17, 17); 
-  overflow-x: hidden; /* stops horizontal scrolling */
+  overflow-x: hidden; 
   padding-top: -50px; 
 
-  transition: 0.5s; /* animation transition time */
+  transition: 0.5s; 
 }
   /* The navigation menu links */
 .sidenav a {
@@ -102,7 +102,7 @@ header{
   color: #f1f1f1;
 }
   
-  /* side navigation close button */
+  /* side nav close button */
   .sidenav .closebtn {
     z-index: 200;
     position: sticky;
@@ -120,17 +120,7 @@ header{
     font-weight: 100;
   }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
 
 .navbar{
     width: max-width;
@@ -413,9 +403,6 @@ nav ul li button{
 }
 
 
-
-
-
 @media screen and (max-width: 767px){
   .notice, nav ul li:nth-child(3), .menu:nth-child(1){
     display: none;
@@ -453,15 +440,15 @@ nav ul li button{
   }
   .sidenav {
     height: 100vh; 
-    width: 0; /* width determined by the JavaScript */
+    width: 0; /* width determined by  JS */
     position: fixed;
     z-index: 300; 
     top: 0; 
     right:0;
     background-color: rgb(17, 17, 17); 
-    overflow-x: hidden; /* stops horizontal scrolling */
+    overflow-x: hidden; /* stops horizontal scroll */
     padding-top: -50px; 
-    transition: 0.5s; /* animation transition time */
+    transition: 0.5s; 
 }
   
   .sidenav .closebtn {
